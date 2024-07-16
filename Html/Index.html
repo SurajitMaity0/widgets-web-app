@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/calender.css">
+    <link rel="stylesheet" href="../css/weather.css">
+    <link rel="stylesheet" href="../css/clock.css">
+    <link rel="stylesheet" href="../css/ToDo.css">
+    <link rel="stylesheet" href="../css/Calculater.css">
+
+    <!-- whater map -->
+
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.umd.min.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
+    <script src="https://cdn.maptiler.com/maptiler-weather/v1.1.0/maptiler-weather.umd.min.js"></script>
+
+</head>
+
+<body>
+ 
+    <header>
+        <img src="" alt="">
+    </header>
+    <nav></nav>
+    <main>
+        <div class="weather-report">
+            <div class="current-weather">
+                <h3>Current Weather</h3>
+                <p class="Current-Time"></p>
+
+            </div>
+            <div class="sceals">
+                <span class="tempDeg"><sup>o</sup><P class="degs">C</P></span>
+            </div>
+            <div class="clude-data">
+                <div class="clude-img">
+                    <img src="../assects/cloudy.png" alt="cloudy">
+                </div>
+                <div class="temp">
+                    <h2 class="Temperature">30</h2>
+                    <span class="seal">
+                        <sup>o</sup><p class="degs2">C</p>
+                    </span>
+                </div>
+                <div class="location">
+                    <div class="city">indisa</div>
+                    <div class="region">india</div>
+                    <div class="contry">india</div>
+                </div>
+
+            </div>
+            <div class="current-data">
+                <div class="airQuality">
+                    <h3>Air Quality</h3>
+                    <p>65</p>
+                </div>
+                <div class="Wind">
+                    <h3>Wind</h3>
+                    <p>4 KM/H</p>
+                </div>
+                <div class="Humidity">
+                    <h3>Humidity</h3>
+                    <p></p>
+                </div>
+                <div class="Visibility">
+                    <h3>Visibility</h3>
+                    <p></p>
+                </div>
+                <div class="Pressure">
+                    <h3>Pressure</h3>
+                    <p></p>
+                </div>
+                <div class="Uv">
+                    <h3>UV</h3>
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Calc">
+                <form onsubmit="submit()">
+                    <div class="display">
+                        <input type="text" name="display" id="" class="dis">
+                    </div>
+                    <div class="keys">
+                        <input type="button" value="Ac" class="numKeys">
+                        <input type="button" value="%" class="numKeys">
+                        <input type="button" value="del" class="numKeys">
+                        <input type="button" value="/" class="numKeys">
+                        <input type="button" value="7" class="numKeys">
+                        <input type="button" value="8" class="numKeys">
+                        <input type="button" value="9" class="numKeys">
+                        <input type="button" value="*" class="numKeys">
+                        <input type="button" value="4" class="numKeys">
+                        <input type="button" value="5" class="numKeys">
+                        <input type="button" value="6" class="numKeys">
+                        <input type="button" value="-" class="numKeys">
+                        <input type="button" value="1" class="numKeys">
+                        <input type="button" value="2" class="numKeys">
+                        <input type="button" value="3" class="numKeys">
+                        <input type="button" value="+" class="numKeys">
+                        <input type="button" value="0" class="numKeys">
+                        <input type="button" value="." class="numKeys">
+                        <input type="button" value="=" class="numKeys equal">
+
+
+
+                        
+                    </div>
+                </form>
+
+                
+            </div>
+
+
+
+        </div>
+        <div class="clock">
+            <div class="clock-body">
+                <div class="Hours-number">
+                    <div class="hours" style="--i:1"><b>1</b></div>
+                    <div class="hours" style="--i:2"><b>2</b></div>
+                    <div class="hours" style="--i:3"><b>3</b></div>
+                    <div class="hours" style="--i:4"><b>4</b></div>
+                    <div class="hours" style="--i:5"><b>5</b></div>
+                    <div class="hours" style="--i:6"><b>6</b></div>
+                    <div class="hours" style="--i:7"><b>7</b></div>
+                    <div class="hours" style="--i:8"><b>8</b></div>
+                    <div class="hours" style="--i:9"><b>9</b></div>
+                    <div class="hours" style="--i:10"><b>10</b></div>
+                    <div class="hours" style="--i:11"><b>11</b></div>
+                    <div class="hours" style="--i:12"><b>12</b></div>
+
+                    <div class="mid-point"></div>
+                    <div class="hours-del"></div>
+                    <div class="minites-del"></div>
+                    <div class="second-del"></div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="calendar">
+            <div class="calender-header">
+                <div class="MonthYear"></div>
+                <div class="calender-nav">
+                    <button class="prev-btn"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fa-solid fa-circle-chevron-right"></i></button>
+                </div>
+
+            </div>
+
+
+            <div class="calender-body">
+               <div class="weeks">
+               </div>
+               <div class="month-days">
+               </div>
+            </div>
+
+        </div>
+        <div class="ToDo">
+            <div class="toHeader">
+                <h3>ToDo List</h3>
+            </div>
+            <div class="inputs">
+                <input type="radio" id="primary-inputs">
+                <input type="text" id="addinput" placeholder="Enter Your Task">
+                <button id="add">Add</button>
+
+            </div>
+            <div class="outputs">
+                
+            </div>
+                
+            </div>
+
+        </div>
+        <div class="weather-map">
+            <div id="time-info">
+                <span id="time-text"></span>
+                <button id="play-pause-bt" class="btn btn-primary btn-sm time-button">Play 3600x</button>
+                <input type="range" id="time-slider" min="0" max="11" step="1">
+            </div>
+
+            <div id="variable-name">Wind</div>
+            <div id="pointer-data"></div>
+            <div id="map">
+                <ul id="buttons">
+                    <li id="temperature" class="btn btn-primary button">Temperature</li>
+                    <li id="precipitation" class="btn btn-primary button">Precipitation</li>
+                    <li id="pressure" class="btn btn-primary button">Pressure</li>
+                    <li id="radar" class="btn btn-primary button">Radar</li>
+                    <li id="wind" class="btn btn-primary button">Wind</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    
+    <script src="../js/weather.js">
+    </script>
+    <script src="../js/calender.js"></script>
+    <script src="../js/clock.js"></script>
+    <script src="../js/ToDo.js"></script>
+    <script src="../js/Calc.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/2d47128061.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+

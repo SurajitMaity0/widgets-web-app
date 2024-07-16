@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* variables */
+:root {
+    --bg-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+}
+
+
+header {
+    width: 100%;
+    min-height: 8vh;
+    background-color: black;
+}
+
+
+main {
+    width: 100%;
+    height: 92vh;
+    gap: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+
+}
+
+.weather-report {
+    grid-column: 1/3;
+    width: 100%;
+    border: 1px solid black;
+    height: 50%;
+}
+
+.clock {
+    border: 2px solid red;
+}
+
+.Calc {
+    border: 2px solid blue;
+}
+
+.calendar {
+    grid-column: 3/5;
+    border: 1px solid black;
+    height: 50%;
+}
+.ToDo {
+    border: 2px solid green;
+}
+
+.weather-map {
+    grid-column: 1/4;
+    border: 10px solid black;
+}
+
+
+
+/* responsibe */
+
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .weather-report {
+        grid-column: 1/3;
+
+    }
+
+    .clock {
+        grid-column: 1/3;
+    }
+
+    .calendar {
+        grid-column: 1/3;
+    }
+
+    .weather-map {
+        grid-column: 1/4;
+
+    }
+}

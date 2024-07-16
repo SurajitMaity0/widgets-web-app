@@ -1,0 +1,48 @@
+.Calc form {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+.Calc form .display {
+    width: 100%;
+    height: 18%;
+    margin-bottom: 2%;
+}
+
+.Calc form .display .dis {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    padding-left: 2%;
+    font-size: 1.5vw;
+
+    box-shadow: inset 1px 1px 5px 2px rgb(24, 144, 250);
+
+}
+
+.Calc form .keys {
+    width: 100%;
+    height: 82%;
+
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2%;
+}
+
+.Calc .keys .numKeys {
+    font-size: 1.5vw;
+    border: none;
+    color: var(--TEXT-COLOR-WHITE);
+    background: none;
+    box-shadow: inset 1px 1px 5px 2px rgb(5, 121, 255);
+
+}
+
+.Calc .keys .equal {
+    grid-column: 3/5;
+
+    font-size: 1.5vw;
+}

@@ -1,0 +1,96 @@
+.ToDo .inputs {
+
+    width: 100%;
+    display: flex;
+    background-color: var(--text-color);
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 15%;
+}
+
+.ToDo h3 {
+    width: 100%;
+    height: 10%;
+    padding: 2%;
+
+
+
+
+}
+
+.ToDo .inputs #primary-inputs {
+    width: 5%;
+    height: 100%;
+    margin-left: 2%;
+
+}
+
+.ToDo .inputs #addinput {
+    width: 75%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background: none;
+    font-size: 1.1rem;
+    color:#ffff;
+}
+
+.ToDo .inputs button {
+    width: 15%;
+    height: 100%;
+    border: none;
+    background-color: #008000;
+    
+}
+
+.outputs {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1%;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.outputs .out {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    background-color: #02288a;
+    gap: 2%;
+
+}
+
+.out input {
+    width: 5%;
+    height: 100%;
+ 
+    margin-left: 2%;
+
+}
+
+.out p {
+    width: 75%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: medium;
+    font-weight: bold;
+    color: #fff;
+    overflow: hidden;
+    padding: 2%;
+}
+
+.out button {
+    width: 15%;
+    height: 80%;
+    border: none;
+    background-color: green;
+    color: white;
+}

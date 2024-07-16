@@ -1,0 +1,288 @@
+.weather-report {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.weather-report .current-weather {
+
+    width: 30%;
+
+    margin-left: 1%;
+}
+
+.current-weather h3 {
+    padding: 1%;
+    font-size: 1.3vw;
+    font-weight: bold;
+
+}
+
+.current-weather p {
+    font-size: 1.1vw;
+
+    font-weight: bold;
+}
+
+.clude-data {
+    margin-top: 1%;
+    margin-left: 1%;
+    display: flex;
+
+}
+
+.clude-data .clude-img {
+    width: 20%;
+    height: 100%;
+
+
+}
+
+.clude-data .clude-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.clude-data .temp h1 {
+    font-size: 5vw;
+
+}
+
+.temp {
+
+    display: flex;
+
+    width: 20%;
+
+    margin-left: 2%;
+    align-items: center;
+}
+
+.temp h2 {
+    font-size: 6vw;
+}
+
+.temp .seal {
+    width: 100%;
+    height: 20%;
+    margin-top: -30%;
+    margin-left: 1%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.temp .seal sup {
+    margin-top: -18px;
+}
+
+.location {
+    top: 30%;
+    right: 1%;
+    text-align: right;
+    padding: 1%;
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    font-size: 1.2vws;
+
+
+}
+
+.current-data {
+
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 5% 1% 0% 1%;
+
+    width: 98%;
+    height: 15%;
+
+}
+
+.current-data .airQuality,
+.Wind,
+.Humidity,
+.Visibility,
+.Pressure,
+.Uv {
+    text-align: center;
+    width: 15%;
+    height: 100%;
+
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-image: linear-gradient(120deg, #4b8ffcdd 0%, #0fe5ed 100%);
+
+}
+
+.current-data h3 {
+    font-size: 1.2vw;
+    font-weight: bold;
+
+}
+
+.current-data p {
+    font-size: 1vw;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.weather-report .sceals {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    cursor: pointer;
+    width: 5%;
+    height: 10%;
+
+    overflow: hidden;
+    border-radius: 5px;
+
+
+}
+
+.weather-report .sceals:hover {
+    background-color: #3c1afda8;
+    color: white;
+}
+
+.sceals span {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+
+.sceals span sup {
+    margin-top: -5px;
+}
+
+/* responsib */
+
+
+
+
+
+
+
+/* whater map */
+
+
+.weather-map {
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#pointer-data {
+    z-index: 1;
+    position: fixed;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 27px 0px 0px 10px;
+    color:
+        #fff;
+    text-shadow: 0px 0px 10px #0007;
+}
+
+#variable-name {
+    z-index: 1;
+    position: fixed;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0px 0px 10px;
+    color:
+        #fff;
+    text-shadow: 0px 0px 10px #0007;
+    text-transform: capitalize;
+}
+
+#time-info {
+    position: absolute;
+    border: 2px solid red;
+    width: 60%;
+    bottom: 0;
+    z-index: 1;
+    margin: 10px;
+    text-shadow: 0px 0px 5px black;
+    color:
+        white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+}
+
+#time-text {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#time-slider {
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    filter: drop-shadow(0 0 7px #000a);
+    margin-top: 10px;
+}
+
+#buttons {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    padding: 0;
+    width: 13%;
+    height: 70%;
+
+    cursor: pointer;
+    position: absolute;
+    top: 18%;
+    left: 0;
+    z-index: 99;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+
+
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
